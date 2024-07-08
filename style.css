@@ -1,16 +1,16 @@
 #bentuk {
-  width: 250px;
-  height: 250px;
-  background-color: gray;
-  display: block;
-  border-radius: 0;
-  transition: all 0.7s;
-  margin-top: 20px;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    display: block;
+    border-radius: 0;
+    transition: all 0.7s;
+    margin-top: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  

@@ -1,1 +1,0 @@
-# fikri_PKLtes

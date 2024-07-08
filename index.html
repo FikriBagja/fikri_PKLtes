@@ -7,17 +7,17 @@
   <body>
     <div class="controls">
       <label for="warna1">Warna Pertama:</label>
-      <input type="color" id="warna1" value="#ff0000" />
+      <input type="color" id="warna1" />
       <br />
       <label for="warna2">Warna Kedua:</label>
-      <input type="color" id="warna2" value="#0000ff" />
+      <input type="color" id="warna2" />
       <br />
       <label for="warna3">Warna Ketiga:</label>
-      <input type="color" id="warna3" value="#008000" />
+      <input type="color" id="warna3" />
       <br />
-      <button onclick="ubahbentuk()" id="sub" onmouseover="masuk()" onmouseout="keluar()">Submit</button>
+      <button onclick="tampilkanKotak()" id="sub" onmouseover="masuk()" onmouseout="keluar()">Submit</button>
     </div>
-    <center><span id="bentuk" onclick="ubahbentuk()"></span></center>
+    <center><span id="bentuk" onclick="ubahbentuk()" style="display: none;"></span></center>
     <script src="main.js"></script>
   </body>
 </html>

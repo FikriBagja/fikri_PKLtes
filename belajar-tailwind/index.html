@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,16 +25,16 @@
             colors: {
               hitam: "#bada55",
             },
-            animation : {
-              'spin-slow' : 'spin 3s linear infinite',
-              goyang : 'goyang 1s ease-in-out infinite',
+            animation: {
+              "spin-slow": "spin 3s linear infinite",
+              goyang: "goyang 1s ease-in-out infinite",
             },
             keyframes: {
-              goyang : {
-                '0%, 100%' : { transform: 'rotate(-3deg)' },
-                '50%' : { transform: 'rotate(3deg)' },
-              }
-            }
+              goyang: {
+                "0%, 100%": { transform: "rotate(-3deg)" },
+                "50%": { transform: "rotate(3deg)" },
+              },
+            },
           },
         },
       };
@@ -52,6 +52,7 @@
         >Mari Belajar Tailwind</span
       >
     </h1>
+
     <section class="mb-10 bg-gradient-to-br from-indigo-200 to-yellow-200">
       <h2 class="text-center">Spacing</h2>
       <div class="m-13">margin</div>
@@ -126,6 +127,7 @@
         class="w-[200px] h-[200px] bg-white/50 m-auto backdrop-blur-lg rounded-full animate-bounce"
       ></div>
     </div>
+
     <hr class="my-20" />
 
     <div class="flex justify-center">
@@ -146,6 +148,7 @@
     >
       Simpan
     </button>
+
     <div
       class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group font-serif dark:hover:text-slate-800"
     >
@@ -184,10 +187,13 @@
         </label>
       </form>
     </div>
+
     <hr class="my-20" />
+
     <div
       class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:rotate-180 hover:bg-pink-500 transition origin-top-left animate-spin"
     ></div>
+
     <div class="w-40 h-40 mx-auto mt-20 group">
       <div
         class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-500 animate-spin"
@@ -197,6 +203,194 @@
     <div
       class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg mt-20 animate-goyang"
     ></div>
+
+    <hr class="my-20" />
+
+    <div class="container px-8 mx-auto">
+      <div class="border rounded-lg shadow-lg p-10 relative">
+        <div
+          class="w-10 h-10 bg-pink-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer"
+        >
+          <a href="#" class="text-xl m-auto">🔝</a>
+        </div>
+        <div
+          class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer"
+        >
+          <span class="text m-auto">❌</span>
+        </div>
+        <img
+          src="img/1.jpg"
+          alt=""
+          width="150"
+          class="float-left mr-4 -mt-4 rounded-full"
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
+          excepturi? Corporis vitae eos consequatur quod facere inventore
+          temporibus, quae quas adipisci nobis. Doloribus provident odit atque
+          neque voluptatem sint autem cumque ipsam fugit recusandae. Nostrum
+          facere consequuntur soluta officiis libero! Corporis aut distinctio
+          modi minima asperiores at officia, pariatur vero Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Maxime delectus ipsa harum
+          magnam dolor enim veniam itaque quod hic quae..
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3"
+    >
+      <img src="img/1.jpg" alt="Image" class="mb-4" />
+      <img src="img/1.jpg" alt="Image" class="mb-4" />
+      <img src="img/1.jpg" alt="Image" class="mb-4" />
+      <img src="img/1.jpg" alt="Image" class="mb-4" />
+      <img src="img/1.jpg" alt="Image" class="mb-4" />
+      <img src="img/1.jpg" alt="Image" class="mb-4" />
+    </div>
+
+    <hr class="my-20" />
+
+    <div
+      class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl"
+    >
+      <h3
+        class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl dark:text-white"
+      >
+        Fikri <span class="text-sky-500">Bagja</span>
+      </h3>
+      <img
+        src="img/3.png"
+        alt=""
+        class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover"
+      />
+      <h2
+        class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm:text-4xl dark:text-white"
+      >
+        Mari Belajar
+      </h2>
+      <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl dark:text-white">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur
+        labore quisquam sunt sed saepe fugit officia! Nesciunt beatae tempora
+        reiciendis doloribus magni saepe, architecto exercitationem totam omnis
+        harum, sunt excepturi commodi eligendi ipsam
+      </p>
+      <div class="mt-4 sm:mt-6">
+        <a
+          href="#"
+          class="inline-block px-5 py-3 bg-sky-500 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base"
+          >Coba</a
+        >
+      </div>
+    </div>
+
+    <hr class="my-20" />
+
+    <div
+      class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0"
+    >
+      <div class="lg:p-12 lg:flex-1">
+        <h3
+          class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl dark:text-white"
+        >
+          Fikri <span class="text-sky-500">Bagja</span>
+        </h3>
+        <img
+          src="img/3.png"
+          alt=""
+          class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover l lg:hidden"
+        />
+        <h2
+          class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm:text-4xl dark:text-white"
+        >
+          Mari Belajar
+        </h2>
+        <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl dark:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+          pariatur labore quisquam sunt sed saepe fugit officia! Nesciunt beatae
+          tempora reiciendis doloribus magni saepe, architecto exercitationem
+          totam omnis harum, sunt excepturi commodi eligendi ipsam
+        </p>
+
+        <div class="mt-4 sm:mt-6">
+          <a
+            href="#"
+            class="inline-block px-5 py-3 bg-sky-500 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base"
+            >Coba</a
+          >
+        </div>
+      </div>
+      <div class="hidden lg:flex lg:w-1/2">
+        <img src="img/3.png" alt="" class="object-cover rounded-l-3xl" />
+      </div>
+    </div>
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">
+      Foto
+    </h2>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+        <img src="img/1.avif" alt="" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+        <img src="img/1.avif" alt="" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+        <img src="img/1.avif" alt="" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+        <img src="img/1.avif" alt="" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+        <img src="img/1.avif" alt="" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+        <img src="img/1.avif" alt="" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            pariatur.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="mb-96"></div>
     <script>
       const checkbox = document.querySelector("#toggle");

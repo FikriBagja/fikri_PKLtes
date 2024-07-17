@@ -10,7 +10,14 @@
         theme: {
           container: {
             center: true,
-            padding: "16px",
+            padding: {
+              default : "1rem",
+              sm: "2rem",
+              md: "3rem",
+              lg: "4rem",
+              xl: "5rem",
+              "2xl": "6rem",
+            }
           },
           extend: {
             colors: {
@@ -60,9 +67,9 @@
   <body>
 
     <header
-      class="bg-transparent top-0 fixed left-0 w-full flex items-center  max-h-screen"
+      class="bg-transparent top-0 fixed left-0 w-full flex items-center max-h-screen "
     >
-      <div class="container lg:ml-20">
+      <div class="container lg:-ml-8 xl:ml-1 2xl:ml-[110px]">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
             <a
@@ -90,7 +97,7 @@
               id="nav-menu"
               class="hidden absolute py-5 bg-transparent shadow-slate-400 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none z-30 "
             >
-              <ul class="block lg:flex lg:mr-64">
+              <ul class="block lg:flex lg:mr-24 xl:mr-[190px] ">
                 <li class="group">
                   <a
                     href="#"
@@ -122,7 +129,7 @@
                 <li class="group">
                   <a
                     href="#"
-                    class="text-base font-thin lg:text-white text-slate-500 py-2 mx-5 lg:mx-0 flex group-hover:text-slate-300 lg:right-0 lg:bg-blue-700 lg:px-5 lg:rounded-lg lg:absolute lg:mr-28"
+                    class="text-base font-thin lg:text-white text-slate-500 py-2 mx-5 lg:mx-0 flex group-hover:text-slate-300 lg:right-0 lg:bg-blue-700 lg:px-5 lg:rounded-lg lg:absolute xl:mr-12 lg:-mr-14"
                     >Start a free trial</a
                   >
                 </li>
@@ -135,21 +142,21 @@
 
     <section class="pt-48 pb-28 bg-slate-800 min-h-screen min-w-full">
       <div class="container">
-        <div class="flex flex-wrap lg:ml-20">
-          <div class="w-52 self-center px-4 lg:w-1/2 lg:block">
+        <div class="flex flex-wrap xl:ml-20 lg:ml-0">
+          <div class="w-52 self-center px-4 lg:w-1/2 lg:block ">
             <h1
-              class="text-3xl text-white w-80 lg:w-96 font-extrabold md:w-96 ml-5 lg:text-4xl"
+              class="text-3xl text-white w-80 lg:w-96 font-extrabold md:w-96  xl:-ml-14 lg:-ml-6 ml-5 lg:text-4xl"
             >
               Get More Visitors, Get More Sales.
             </h1>
             <p
-              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-4 ml-5 lg:mb-0"
+              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed xl:-ml-14 lg:-ml-6 mt-4 ml-5 lg:mb-0"
             >
               With lost of unique blocks, you can easily build a page without
               coding. Build your next consultancy website within few minutes.
             </p>
             <p
-              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-4 ml-5 lg:mb-0"
+              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-4 ml-5 xl:-ml-14 lg:-ml-6 lg:mb-0"
             >
               <a href="" class="text-green-500 font-bold">Start a free trial -></a>
             </p>
@@ -160,16 +167,14 @@
               <img
                 src="img/pngwing.com (1).png"
                 alt="belakang"
-                class="absolute rounded-lg lg:w-[150px] h-[150px] top-[-40px] left-[270px] lg:top-[-40px] lg:left-[420px]  md:top-[-30px] md:left-[400px] sm:top-[-30px] sm:left-[400px] xs:top-[-20px] xs:left-[300px] overflow-hidden xl:block hidden lg:ml-10"
+                class="absolute rounded-lg lg:w-[150px] h-[150px] top-[-40px] left-[270px] lg:top-[-40px] lg:left-[420px]  md:top-[-30px] md:left-[400px] sm:top-[-30px] sm:left-[400px] xs:top-[-20px] xs:left-[300px] overflow-hidden xl:block hidden xl:ml-4 xl:mt-3"
               />
               <img
                 src="img/atas.webp"
                 alt=""
-                class="rounded-lg relative z-20 xl:ml-16 "
-                width="510px"
-                style="height: 325px;"
+                class="rounded-lg relative z-20 xl:w-[500px] h-[325px] xl:ml-16 lg:ml-[60px] lg:w-[502px] "
               />
-              <div class="absolute inset-0 flex items-center justify-center xl:-ml-6 sm:-ml-28 md:-ml-36 z-20">
+              <div class="absolute inset-0 flex items-center justify-center xl:-ml-6 sm:-ml-28 md:-ml-36 z-20 lg:ml-40">
                 <div class="text-blue-700 text-5xl bg-white rounded-full p-3 hover:bg-opacity-75 cursor-pointer">
                   &#9658;
                 </div>
@@ -187,49 +192,49 @@
       <div
         class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 ml-32 mr-48 items-center"
       >
-        <div class="mx-auto">
+        <div class="mx-auto lg:-ml-8 xl:ml-6">
           <img
             src="img/makeles-removebg-preview.png"
             alt=""
             width="100px"
             height="100px"
-            class="block mt-10 sm:-ml-9 h-20 w-36 lg:w-28 lg:h-12"
+            class="block mt-10 sm:-ml-9 h-20 w-36 lg:w-28 lg:h-12 2xl:ml-[84px]"
           />
         </div>
-        <div class="mx-auto">
+        <div class="mx-auto lg:-ml-8">
           <img
             src="img/coworks-removebg-preview.png"
             alt=""
             width="100px"
             height="100px"
-            class="block mt-10 sm:ml-9 ml-16 lg:-ml-3 h-20 w-48 lg:w-28 lg:h-12"
+            class="block mt-10 sm:ml-9 ml-16 lg:-ml-3 h-20 w-48 lg:w-28 lg:h-12 2xl:ml-36"
           />
         </div>
-        <div class="mx-auto">
+        <div class="mx-auto lg:-ml-8">
           <img
             src="img/greener-removebg-preview.png"
             alt=""
             width="100px"
             height="100px"
-            class="block mt-10 sm:ml-28 lg:ml-3 h-20 w-48 lg:w-28 lg:h-12"
+            class="block mt-10 sm:ml-28 lg:ml-3 h-20 w-48 lg:w-28 lg:h-12 2xl:ml-32"
           />
         </div>
-        <div class="mx-auto">
+        <div class="mx-auto lg:-ml-8">
           <img
             src="img/saas-removebg-preview.png"
             alt=""
             width="100px"
             height="100px"
-            class="block mt-10 sm:-ml-9 ml-16 lg:ml-16 h-20 w-36 lg:w-28 lg:h-12"
+            class="block mt-10 sm:-ml-9 ml-16 lg:ml-16 h-20 w-36 lg:w-28 lg:h-12 2xl:ml-24"
           />
         </div>
-        <div class="mx-auto">
+        <div class="mx-auto lg:ml-12">
           <img
             src="img/dorfus-removebg-preview.png"
             alt=""
             width="100px"
             height="100px"
-            class="block sm:ml-8 mt-10 lg:ml-20 h-20 w-36 lg:w-28 lg:h-12"
+            class="block sm:ml-8 mt-10 h-20 w-36 lg:w-28 lg:h-12 2xl:ml-0"
           />
         </div>
         <div class="mx-auto">
@@ -238,7 +243,7 @@
             alt=""
             width="100px"
             height="100px"
-            class="block mt-10 sm:ml-28 ml-16 lg:ml-28 h-20 w-36 lg:w-28 lg:h-12"
+            class="block mt-10 sm:ml-28 ml-16 lg:ml-28 h-20 w-36 lg:w-28 lg:h-12 2xl:-ml-5"
           />
         </div>
       </div>
@@ -248,8 +253,8 @@
 
     <section class="pt-20 pb-28">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-0 gap-8 justify-center items-center ml-28 mr-36">
-          <div class="flex space-x-4 justify-center xl:ml-36">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-0 gap-8 justify-center items-center ml-28 mr-36 xl:-ml-20">
+          <div class="flex space-x-4 justify-center xl:ml-36 lg:ml-4">
             <img src="img/Screenshot_2024-07-15_183802-removebg-preview.png" alt="Image 1" style="height: 35px; width: 35px;"/>
             <div>
               <h2 class="font-extrabold text-lg">Organize your campaigns</h2>
@@ -259,7 +264,7 @@
             </div>
           </div>
     
-          <div class="flex space-x-4 justify-center lg:ml-1 md:ml-32">
+          <div class="flex space-x-4 justify-center lg:ml-1 md:ml-32 xl:ml-20">
             <img src="img/Screenshot_2024-07-15_184624-removebg-preview.png" alt="Image 2" style="height: 35px; width: 35px;" />
             <div>
               <h2 class="font-extrabold text-lg">Manage customers</h2>
@@ -269,7 +274,7 @@
             </div>
           </div>
     
-          <div class="flex space-x-4 justify-center lg:-ml-10 xl:-ml-40">
+          <div class="flex space-x-4 justify-center lg:-ml-10 xl:-ml-10">
             <img src="img/Screenshot_2024-07-15_184654-removebg-preview.png" alt="Image 3" style="height: 35px; width: 35px;" />
             <div>
               <h2 class="font-extrabold text-lg">Track Progress fast</h2>
@@ -284,31 +289,29 @@
             
     <section class="pt-10 pb-28">
       <div class="container">
-        <div class="flex flex-wrap lg:ml-20">
+        <div class="flex flex-wrap xl:-ml-1 lg:-ml-9">
           <div class="w-full px-4 lg:w-1/2">
             <div class="relative ml-4">
               <img
                 src="img/-aaa.png"
                 alt=""
-                class="rounded-lg"
-                width="510px"
-                style="height: 325px;"
+                class="rounded-lg xl:w-[510px] h-[325px] w-[800px]"
               />
             </div>
           </div>
-          <div class="w-52 self-center px-4 lg:w-1/2 lg:block">
+          <div class="w-52 self-center px-4 lg:w-1/2 xl:block">
             <h1
-              class="text-2xl text-dark w-80 font-extrabold ml-5 mt-6 lg:mt-0"
+              class="text-2xl text-dark w-80 font-extrabold ml-5 mt-6 xl:ml-0 lg:mt-0"
             >
               Track your progress with our advanced site.
             </h1>
             <p
-              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-2 lg:mt-4 ml-5 lg:mb-0"
+              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-2 lg:mt-4 xl:ml-0 ml-5 lg:mb-0"
             >
               We share common trends and strategies for improving your rental income and making sure you stay in high demand.
             </p>
             <p
-              class="font-thin text-slate-400 text-sm w-80 md:w-80 leading-relaxed lg:mt-4 ml-5 lg:mb-0 -mt-10"
+              class="font-thin text-slate-400 text-sm w-80 md:w-80 leading-relaxed lg:mt-4 ml-5 xl:ml-0 lg:mb-0 -mt-10"
             >
               <a href="" class="text-blue-700 font-bold">Start a free trial -></a>
             </p>
@@ -320,27 +323,27 @@
     <section class="lg:pt-10 sm:-mt-12 pb-28">
       <div class="container">
         <div class="flex">
-        <div class="flex flex-wrap lg:flex-nowrap md:block xl:flex lg:flex lg:ml-20 ">
-          <div class="w-52 self-center px-4 lg:w-1/2 lg:block">
+        <div class="flex flex-wrap lg:flex-nowrap md:block xl:flex lg:flex xl:ml-20 lg:-ml-9">
+          <div class="w-52 self-center px-4 lg:w-1/2 lg:block ">
             <h1
-              class="text-2xl xl:text-3xl xl:w-96 sm:w-80 text-dark w-96 font-extrabold ml-5 lg:-mt-0 "
+              class="text-2xl w-96 xl:text-3xl xl:w-96 xl:-ml-16 lg:w-80 sm:w-80 text-dark font-extrabold ml-5 lg:-mt-0 "
             >
               Understand your visitors fast. Take quick actions.
             </h1>
             <p
-              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-2 lg:mt-4 ml-5 lg:mb-0"
+              class="font-thin text-slate-400 text-sm mb-12 xl:-ml-16 w-80 md:w-80 leading-relaxed mt-2 lg:mt-4 ml-5 lg:mb-0"
             >
               We share common trends and strategies for improving your rental income and making sure you stay in high demand.
             </p>
             <p
-              class="font-thin text-slate-400 text-sm w-80 md:w-80 leading-relaxed lg:mt-4 ml-5 lg:mb-0 -mt-10"
+              class="font-thin text-slate-400 text-sm w-80 xl:-ml-16 md:w-80 leading-relaxed lg:mt-4 ml-5 lg:mb-0 -mt-10"
             >
               <a href="" class="text-blue-700 font-bold ">Start a free trial -></a>
             </p>
           </div>
           
 
-<div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow z-10 sm:ml-9 ml-8 mt-12 lg:mt-0 md:ml-8 sm:mt-4 lg:-ml-2 lg:w-[300px]  md:w-full xl:w-[350px] xl:ml-10">
+<div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow z-10 sm:ml-9 ml-8 mt-12 lg:mt-0 md:ml-8 sm:mt-4 lg:ml-12 lg:w-[340px] md:w-full xl:w-[375px] xl:ml-[65px]">
   <div class="flex items-center justify-between mb-4">
       <h5 class="text-sm font-bold leading-none text-gray-900">Students by average max</h5>
       <a href="#" class="text-base text-slate-500 hover:underline">
@@ -458,7 +461,7 @@
       </ul>
     </div>
   </div>
-  <div class="w-full max-w-md bg-white border border-gray-200 mt-12 lg:mt-0 rounded-lg shadow lg:opacity-50 h-[550px] lg:h-[435px] xl:h-[425px] self-center lg:w-[192px] xl:w-[250px] z-0 lg:-ml-16 ml-8 md:w-full md:h-[550px] md:ml-8 xl:-ml-8">
+  <div class="w-full max-w-md bg-white border border-gray-200 mt-12 lg:mt-0 rounded-lg shadow lg:opacity-50 h-[550px] lg:h-[435px] xl:h-[425px] self-center lg:w-[192px] xl:w-[240px] z-0 lg:-ml-4 ml-8 md:w-full md:h-[550px] md:ml-8 xl:-ml-8">
     <p class="ml-4 mt-4 mb-4">Type of studying</p>
     <img src="img/bulet-removebg-preview.png" class="lg:-ml-14" alt="">
     <div class="flex justify-between items-center ms-4 mt-4">
@@ -501,8 +504,8 @@
 
     <section class="pt-10 pb-28">
       <div class="container">
-        <div class="flex flex-wrap lg:ml-20">
-          <div class="w-full px-4 lg:w-1/2 grid grid-cols-2 gap-2 mx-auto">
+        <div class="flex flex-wrap xl:ml-20">
+          <div class="w-full px-4 lg:w-1/2 grid grid-cols-2 gap-2 mx-auto lg:-ml-4 xl:-ml-14">
             <div class="-mt-6"><img src="img/1.jpeg" class="rounded-lg" alt=""></div>
             <div class="mt-3"><img src="img/3.jpeg" class="rounded-lg" alt=""></div>
             <div class="-mt-20"><img src="img/2.jpeg" class="rounded-lg" alt=""></div>
@@ -510,17 +513,17 @@
           </div>
           <div class="w-52 self-center px-4 lg:w-1/2 lg:block">
             <h1
-              class="text-2xl text-dark w-80 font-extrabold ml-5 mt-6 lg:mt-0 "
+              class="text-2xl text-dark w-80 font-extrabold ml-5 xl:-ml-9 mt-6 lg:mt-0 "
             >
               Make your customers happy by giving services.
             </h1>
             <p
-              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-2 lg:mt-4 ml-5 lg:mb-0"
+              class="font-thin text-slate-400 text-sm mb-12 w-80 md:w-80 leading-relaxed mt-2 lg:mt-4 ml-5 lg:mb-0 xl:-ml-9"
             >
               We share common trends and strategies for improving your rental income and making sure you stay in high demand.
             </p>
             <p
-              class="font-thin text-slate-400 text-sm w-80 md:w-80 leading-relaxed lg:mt-4 ml-5 lg:mb-0 -mt-10"
+              class="font-thin text-slate-400 text-sm w-80 md:w-80 leading-relaxed lg:mt-4 ml-5 lg:mb-0 -mt-10 xl:-ml-9"
             >
               <a href="" class="text-blue-700 font-bold">Start a free trial -></a>
             </p>
@@ -569,134 +572,132 @@
           </div>
         </div>
         
-        <div class="grid lg:grid-cols-3 grid-cols-2 md:ml-4 gap-8 justify-center items-center mt-12 lg:ml-28 lg:mr-28">
-          <div class="w-full max-w-sm p-4 bg-white border border-white rounded-lg shadow sm:p-8">
-            <h5 class="mb-10 font-bold text-blue-900">STARTER</h5>
-            <div class="flex items-baseline text-gray-900">
-              <span class="text-3xl font-semibold">$</span>
-              <span class="text-5xl font-extrabold tracking-tight">19</span>
-              <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
-            </div>
-            <p class="mt-4 text-gray-500">billed monthly</p>
-            <ul role="list" class="space-y-5 my-7 mt-10">
-              <li class="flex items-center">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">Commercial Li</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">100+ HTML UI</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">01 Domain Support</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">❎</div>
-                <span class="text-base font-normal leading-tight text-gray-500 ms-3">6 Month Premium</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">❎</div>
-                <span class="text-base font-normal leading-tight text-gray-500 ms-3">Lifetime Update</span>
-              </li>
-            </ul>
-            <button type="button" class="text-blue-700 hover:text-white bg-blue-200 font-extrabold hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-44 text-center">Start Free Trial →</button>
-            <p class="text-gray-500 mt-4">No credit card required</p>
-          </div>
-        
-          <div class="w-full max-w-sm p-4 bg-white border border-white rounded-lg shadow sm:p-8">
-            <h5 class="mb-10 font-bold text-blue-900">STANDARD</h5>
-            <div class="flex items-baseline text-gray-900">
-              <span class="text-3xl font-semibold">$</span>
-              <span class="text-5xl font-extrabold tracking-tight">49</span>
-              <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
-            </div>
-            <p class="mt-4 text-gray-500">billed monthly</p>
-            <ul role="list" class="space-y-5 my-7 mt-10">
-              <li class="flex items-center">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">Commercial Li</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">100+ HTML UI</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">01 Domain Support</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base font-normal leading-tight text-gray-500 ms-3">6 Month Premium</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">❎</div>
-                <span class="text-base font-normal leading-tight text-gray-500 ms-3">Lifetime Update</span>
-              </li>
-            </ul>
-            <button type="button" class="text-blue-700 hover:text-white bg-blue-200 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-extrabold rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-44 text-center">Start Free Trial →</button>
-            <p class="text-gray-500 mt-4">No credit card required</p>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 justify-center mt-12 mx-4 lg:mx-28">
+          <div class="w-full lg:w-[455px] p-4 bg-white border border-white rounded-lg shadow sm:p-8 xl:-ml-[69px] xl:w-[490px] lg:-ml-28">
+              <h5 class="mb-10 font-bold text-blue-900">STARTER</h5>
+              <div class="flex items-baseline text-gray-900">
+                  <span class="text-3xl font-semibold">$</span>
+                  <span class="text-5xl font-extrabold tracking-tight">19</span>
+                  <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+              </div>
+              <p class="mt-4 text-gray-500">billed monthly</p>
+              <ul role="list" class="space-y-5 my-7 mt-10">
+                  <li class="flex items-center">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">Commercial Li</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">100+ HTML UI</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">01 Domain Support</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">❎</div>
+                      <span class="text-base font-normal leading-tight text-gray-500 ms-3">6 Month Premium</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">❎</div>
+                      <span class="text-base font-normal leading-tight text-gray-500 ms-3">Lifetime Update</span>
+                  </li>
+              </ul>
+              <button type="button" class="text-blue-700 hover:text-white bg-blue-200 font-extrabold hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Start Free Trial →</button>
+              <p class="text-gray-500 mt-4">No credit card required</p>
           </div>
       
-          <div class="w-full max-w-sm p-4 bg-white border border-white rounded-lg shadow sm:p-8">
-            <h5 class="mb-10 font-bold text-blue-900">PREMIUM</h5>
-            <div class="flex items-baseline text-gray-900">
-              <span class="text-3xl font-semibold">$</span>
-              <span class="text-5xl font-extrabold tracking-tight">99</span>
-              <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
-            </div>
-            <p class="mt-4 text-gray-500">billed monthly</p>
-            <ul role="list" class="space-y-5 my-7 mt-10">
-              <li class="flex items-center">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">Commercial Li</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">100+ HTML UI</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base leading-tight text-black font-semibold ms-3">01 Domain Support</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base font-normal leading-tight text-gray-500 ms-3">6 Month Premium</span>
-              </li>
-              <li class="flex">
-                <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
-                <span class="text-base font-normal leading-tight text-gray-500 ms-3">Lifetime Update</span>
-              </li>
-            </ul>
-            <button type="button" class="text-blue-700 hover:text-white bg-blue-200 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-extrabold rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-44 text-center">Start Free Trial →</button>
-            <p class="text-gray-500 mt-4">No credit card required</p>
+          <div class="w-full p-4 bg-white border border-white rounded-lg lg:w-[455px] xl:w-[491px] shadow sm:p-8">
+              <h5 class="mb-10 font-bold text-blue-900">STANDARD</h5>
+              <div class="flex items-baseline text-gray-900">
+                  <span class="text-3xl font-semibold">$</span>
+                  <span class="text-5xl font-extrabold tracking-tight">49</span>
+                  <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+              </div>
+              <p class="mt-4 text-gray-500">billed monthly</p>
+              <ul role="list" class="space-y-5 my-7 mt-10">
+                  <li class="flex items-center">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">Commercial Li</li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">100+ HTML UI</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">01 Domain Support</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base font-normal leading-tight text-gray-500 ms-3">6 Month Premium</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">❎</div>
+                      <span class="text-base font-normal leading-tight text-gray-500 ms-3">Lifetime Update</span>
+                  </li>
+              </ul>
+              <button type="button" class="text-blue-700 hover:text-white bg-blue-200 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-extrabold rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Start Free Trial →</button>
+              <p class="text-gray-500 mt-4">No credit card required</p>
           </div>
-        </div>
-
+      
+          <div class="w-full p-4 bg-white border border-white rounded-lg lg:-ml-28 lg:w-[490px] 2xl:w-[490px] shadow sm:p-8 xl:-ml-[69px]">
+              <h5 class="mb-10 font-bold text-blue-900">PREMIUM</h5>
+              <div class="flex items-baseline text-gray-900">
+                  <span class="text-3xl font-semibold">$</span>
+                  <span class="text-5xl font-extrabold tracking-tight">99</span>
+                  <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+              </div>
+              <p class="mt-4 text-gray-500">billed monthly</p>
+              <ul role="list" class="space-y-5 my-7 mt-10">
+                  <li class="flex items-center">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">Commercial Li</li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">100+ HTML UI</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base leading-tight text-black font-semibold ms-3">01 Domain Support</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base font-normal leading-tight text-gray-500 ms-3">6 Month Premium</span>
+                  </li>
+                  <li class="flex">
+                      <div class="text-green-500 flex-shrink-0 w-4 h-4">✅</div>
+                      <span class="text-base font-normal leading-tight text-gray-500 ms-3">Lifetime Update</span>
+                  </li>
+              </ul>
+              <button type="button" class="text-blue-700 hover:text-white bg-blue-200 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-extrabold rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Start Free Trial →</button>
+              <p class="text-gray-500 mt-4">No credit card required</p>
+          </div>
+      </div>
+      
         <div class="flex flex-wrap lg:flex-nowrap">
           <div class="w-full px-4 lg:w-1/2 lg:ml-24 mt-20 mb-14 lg:mb-0">
-            <h4 class="font-bold uppercase text-blue-700 text-6xl mb-1">
+            <h4 class="font-bold uppercase text-blue-700 text-6xl mb-1 lg:-ml-28 xl:-ml-16">
               ""
             </h4>
             <h2
-              class="font-bold text-dark text-1xl mb-3 lg:text-2xl -mt-8 lg:-mt-0"
+              class="font-bold text-dark text-1xl mb-3 lg:w-[500px] lg:text-2xl -mt-8 lg:-mt-8 xl:-ml-16 lg:-ml-28"
             >
               "OMG! I cannot believe that i have got a brand new landing page after getting Omega. it was super easy to edit and publish"
             </h2>
-            <p class="font-bold text-base max-w-xl lg:text-lg">
+            <p class="font-bold text-base max-w-xl lg:text-lg lg:-ml-28 xl:-ml-16">
               Diego Morata <span class="text-slate-500">Web Develover</span>
             </p>
           </div>
-          <div class="w-full px-4 lg:w-1/2 lg:ml-24 lg:mt-20 ">
-            <h4 class="font-bold uppercase text-blue-700 text-6xl mb-1">
+          <div class="w-full px-4 lg:w-1/2 lg:ml-0 lg:mt-20 xl:ml-20">
+            <h4 class="font-bold uppercase text-blue-700 text-6xl mb-1 lg:-ml-12">
               ""
             </h4>
             <h2
-              class="font-bold text-dark text-1xl mb-3 max-w-md lg:text-2xl -mt-8 lg:-mt-0"
+              class="font-bold text-dark text-1xl mb-3 max-w-md lg:text-2xl -mt-8 lg:-mt-8 lg:w-[500px] lg:-ml-12"
             >
               "Simply the best. Better than all the rest. I'd recommended this product to beginners and advanced users."
             </h2>
-            <p class="font-bold text-base max-w-xl lg:text-lg">
+            <p class="font-bold text-base max-w-xl lg:text-lg lg:-ml-12">
               Franklin Hicks <span class="text-slate-500">Digital Marketer</span>
             </p>
           </div>
@@ -710,7 +711,7 @@
       <div class="container">
         <div class="flex flex-wrap mr-20">
           <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center lg:ml-10"
+            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center xl:ml-10 lg:ml-0"
           >
             <h2 class="font-bold text-sm text-slate-400 mb-5">Company</h2>
             <p>About us</p>
@@ -719,7 +720,7 @@
             <p>Press</p>
           </div>
           <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center lg:-ml-10"
+            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center xl:-ml-10 lg:ml-0"
           >
             <h2 class="font-bold text-sm text-slate-400 mb-5">Product</h2>
             <p>Features</p>
@@ -729,7 +730,7 @@
             <p>Support</p>
           </div>
           <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center lg:-ml-10"
+            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center xl:-ml-10 lg:ml-0"
           >
             <h2 class="font-bold text-sm text-slate-400 mb-5">Services</h2>
             <p>Digital Marketing</p>
@@ -738,7 +739,7 @@
             <p>UI Design</p>
           </div>
           <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center lg:-ml-2"
+            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5 lg:text-center lg:-ml-1"
           >
             <h2 class="font-bold text-sm text-slate-400 mb-5">Legal</h2>
             <p>Privacy Policy</p>
